@@ -31,7 +31,6 @@ export class RowsAndSeatsComponent implements OnInit {
   }
 
   changeStatus(place: any): void {
-    // place.busy = !place.busy;
     console.log(place);
     place.color = 'green';
   }
