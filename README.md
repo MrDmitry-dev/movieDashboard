@@ -1,27 +1,29 @@
-# MovieDashboard
+## Описание
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+Данное приложение представляет собой имитацию интерфейса бронирования билетов в кинотеатре.
 
-## Development server
+![Зрительный зал](https://user-images.githubusercontent.com/78802250/132754511-d84c7796-4e90-493d-a88d-cde566bdbaf3.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+![Модальное окно](https://user-images.githubusercontent.com/78802250/132754790-d895be0b-ac03-49f4-bae9-284905a927f9.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+При клике на место, открывается модальное окно с выбором времени сеанса (из списка)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+При нажатии «ОК» в модальном окне, время сеанса фиксируется за выбранным местом, место подсвечивается зеленым.
 
-## Running unit tests
+При изменении времени и нажатии «ОК», время заменяется.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+При нажатии «Отмена», забронированное место — очищается.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Запуск приложения
 
-## Further help
+Склонируйте репозиторий.
+Выполните следующие команды в папке с клонированным репозиторием:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`cd movieDashboard`
+
+`ng serve` 
+
+Введите `http://localhost:4200/` в адресную строку браузера.
