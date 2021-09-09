@@ -1,0 +1,19 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.border {
+    width: 90%;
+    height: 2em;
+}
+
+.container *:hover {
+    background-color: rgb(128, 128, 128) !important;
+    z-index: 1000;
+}
+
+.container {
+    grid-template-columns: repeat(30, 1fr);
+    display: grid;
+}

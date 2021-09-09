@@ -1,0 +1,27 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+        <!--  -->
+    </div>
+    <div class="modal-body">
+        <form>
+            <select class="form-select" aria-label="Default select example">
+                <!-- <option *nIf="pickedValue">{{pickedValue}} : 00</option> -->
+                <option selected>Open this select menu</option>
+                <option *ngFor="let interval of intervals">{{interval}} : 00</option>
+            </select>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            Отмена
+        </button>
+        <!-- Здесь нужно очистить, то есть изменить свойство цвета родительской компоненты -->
+
+        <button type="button" class="btn btn-primary" (click)="modal.close('Save click')">ОК</button>
+        <!-- Здесь нужно сохранить время и записать его в родительскую компоненту -->
+    </div>
+</ng-template>
+
+<!-- button for demo -->
+<button class="special" (click)="open(content)"></button>
