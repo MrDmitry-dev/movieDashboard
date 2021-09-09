@@ -17,3 +17,10 @@
     grid-template-columns: repeat(30, 1fr);
     display: grid;
 }
+
+.special {
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
